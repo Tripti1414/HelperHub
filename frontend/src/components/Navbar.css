@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libertinus+Sans:wght@400;700&display=swap');
+html{
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar-wrapper {
+  background-color: #0f172a;
+}
+
+.navbar {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 1.2rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #e1d555;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin-top: 10px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: 0.3s;
+  
+}
+
+.nav-links a:hover {
+  color: #eeeb22;
+}
+
+.nav-btn {
+  background-color: #e1d555;
+  color: black;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-btn:hover {
+  background-color: #f3e228;
+  /* color: white; */
+}
+
+.custom-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 2em;
+  border-radius: 1em;
+  max-width: 90%;
+}
+
+.custom-caption h1 {
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+}
+
+.custom-caption p {
+  font-size: 1.2em;
+}
+
+.modal-header {
+  background-color: #111e3b;
+  color: white;
+  font-family: 'poppins', 'sans-serif';
+}
+
+
+.option-card {
+  width: 180px;
+  padding: 1rem;
+  border: 2px solid #1f1f60;
+  border-radius: 1rem;
+  background-color: #f5f5f5;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  font-family: 'poppins', 'sans-serif';
+
+}
+.option-card:hover {
+  transform: translateY(-5px);
+}
+.option-img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+

@@ -1,0 +1,50 @@
+.hire-form {
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 1rem;
+  background: #f9f9f9;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.hire-form input,
+.hire-form select,
+.hire-form textarea {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-family: inherit;
+  outline: none;
+  transition: 0.3s;
+}
+
+.hire-form input:focus,
+.hire-form select:focus,
+.hire-form textarea:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+.hire-form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.hire-form button {
+  background-color: #007bff;
+  color: white;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.hire-form button:hover {
+  background-color: #0056b3;
+}

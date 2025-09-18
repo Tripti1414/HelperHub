@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Molengo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3em;
+  background: #f5f5f5;
+  min-height: 80vh;
+  text-align: left;
+  gap: 2em;
+  flex-wrap: wrap; /* allows wrapping on smaller screens */
+}
+
+.hero-text {
+  flex: 1;
+  min-width: 280px;
+  font-family: "Molengo", "Poppins", sans-serif;
+}
+
+.hero-text h1 {
+  font-size: 2.8em;
+  color: #333;
+  font-family: "Poppins", sans-serif;
+}
+
+.hero-text p {
+  font-size: 1.1em;
+  margin-top: 0.5em;
+  color: #555;
+  line-height: 1.6;
+}
+
+.hero-btn {
+  margin-top: 1.5em;
+  padding: 0.8em 2em;
+  background: #ded031;
+  color: black;
+  border: none;
+  border-radius: 0.8em;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+}
+
+.hero-btn:hover {
+  background: #f3e228;
+}
+
+.hero-img {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-img img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* 📱 Tablet */
+@media (max-width: 992px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 2em;
+  }
+
+  .hero-text {
+    max-width: 100%;
+  }
+
+  .hero-text h1 {
+    font-size: 2.2em;
+  }
+
+  .hero-text p {
+    font-size: 1em;
+  }
+
+  .hero-img {
+    margin-top: 2em;
+    width: 100%;
+  }
+
+  .hero-img img {
+    max-width: 300px;
+  }
+}
+
+/* 📱 Mobile */
+@media (max-width: 576px) {
+  .hero-text h1 {
+    font-size: 1.8em;
+  }
+
+  .hero-text p {
+    font-size: 0.95em;
+  }
+
+  .hero-btn {
+    padding: 0.6em 1.2em;
+    font-size: 0.9em;
+  }
+
+  .hero-img img {
+    max-width: 250px;
+  }
+}

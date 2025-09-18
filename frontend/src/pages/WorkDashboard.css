@@ -1,0 +1,132 @@
+.worker-dashboard {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+.worker-dashboard h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #2c3e50;
+}
+
+.worker-dashboard h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: #34495e;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* Job cards */
+.job-card {
+  display:flex;
+  flex-direction: column;
+  align-items:flex-start;
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-left: 5px solid #3498db;
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin-bottom: 1.3rem;
+  margin-top: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between; /* puts title left, button right */
+  align-items: center;
+  padding: 12px 20px;
+  background-color: #f8f9fa; /* light background */
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 2rem;
+}
+
+
+.logout-btn {
+  padding: 8px 16px;
+  background-color: #ff4d4f; /* red */
+  color: white;
+  font-weight: 500;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.logout-btn:hover {
+  background-color: #d9363e; /* darker red on hover */
+}
+
+
+.job-card:hover {
+  transform: translateY(-4px);
+}
+
+/* Global button styling */
+.worker-dashboard button {
+  padding: 0.6rem 1.2rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  background-color: #27ae60;
+  color: white;
+}
+
+.worker-dashboard button:hover {
+  background-color: #219150;
+  transform: translateY(-2px);
+}
+
+/* Special button variants */
+.btn-accept {
+  background-color: #3498db;
+}
+
+.btn-accept:hover {
+  background-color: #2f80ed;
+}
+
+.btn-reject {
+  background-color: #e74c3c;
+}
+
+.btn-reject:hover {
+  background-color: #c0392b;
+}
+
+/* Status cards */
+.status-card {
+  padding: 0.8rem 1rem;
+  margin: 0.5rem 0;
+  border-radius: 6px;
+  font-weight: bold;
+  background: #f9f9f9;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.status-card.applied {
+  border-left: 5px solid #2980b9;
+  color: #2980b9;
+}
+
+.status-card.accepted {
+  border-left: 5px solid #27ae60;
+  color: #27ae60;
+}
+
+.status-card.rejected {
+  border-left: 5px solid #e74c3c;
+  color: #e74c3c;
+}
